@@ -1,0 +1,55 @@
+ <html>
+	<head>
+		<title> Form Demo</title>
+        
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+		
+		<!--CDN LINK OF JQUERY PARENT PLUG IN - COMPULSORY TO BE HERE. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			var $FNameLNameRegEx = /^([a-zA-Z]{2,20})$/;
+			var $FullNameRegEx = /^([a-zA-Z ]{2,40})$/;
+			var $BankAccountNameRegEx = /^([a-zA-Z ]{2,60})$/;
+			var $PasswordRegEx = /^(?=.?[A-Z])(?=.?[a-z])(?=.?[0-9])(?=.?[^\w\s]).{8,12}$/;
+
+			var $Emai…
+[10:50 am, 09/08/2022] Reshma Clg: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+
+    <script type="text/javascript">
+        $(Document).ready(
+
+function() {
+    $("#divid").accordion({
+        event: "mouseover"
+    });
+    var event = $("#divid").accordion("option", "event");
+
+    $("#divid").accordion("option", "event", "mouseover");
+});
+
+    </script>
+
+<body>
+    <p><b>Mouseover on the content panels</b></p>
+    <div id="divid">
+       <h3>youtube audio library</h3>
+       <div>The music in this new YouTube Audio Library can be downloaded, remixed and used for free forever.</div>
+       <h3>Arijit Singh's</h3>
+       <div>Arijit Singh's speckless voice dribbles like honey. 3. With his warm voice Arijit brings in soul and meaning to any kind of song. 4.</div>
+       
+    </div>
+    </body>
+</html>
